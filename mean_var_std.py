@@ -5,7 +5,7 @@ def calculate(lst):
         raise ValueError("List must contain nine numbers.")
 
     matrix = np.array(lst).reshape(3, 3)
-
+#calculations for for list of number
     calculations = {
         'mean': [matrix.mean(axis=0).tolist(), matrix.mean(axis=1).tolist(), matrix.mean().tolist()],
         'variance': [matrix.var(axis=0).tolist(), matrix.var(axis=1).tolist(), matrix.var().tolist()],
